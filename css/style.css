@@ -287,3 +287,63 @@ main {
 .contact-form button:hover {
     background-color: #367a2e;
 }
+
+
+.blog-post {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.blog-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.blog-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.blog-content a {
+    color: #419535;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-content a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blog-post {
+        flex-direction: column;
+    }
+
+    .blog-post img {
+        width: 100%;
+    }
+
+    .blog-content {
+        padding: 15px;
+    }
+}
